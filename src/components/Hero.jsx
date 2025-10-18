@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
-import { Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail, GraduationCap } from 'lucide-react'
 import SectionParticles from './SectionParticles'
 
 const Hero = () => {
@@ -9,7 +9,10 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Caught somewhere between knowing too much and understanding nothing.'],
+      strings: [
+        'Caught somewhere between knowing too much and understanding nothing.',
+        'Learning to live in the tension between reason and wonder.'
+      ],
       typeSpeed: 50,
       backSpeed: 30,
       backDelay: 2000,
@@ -59,7 +62,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <a 
-                href="https://linkedin.com/in/mustafa-siddiqui" 
+                href="https://www.linkedin.com/in/mustafasid/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="glow-hover p-3 rounded-full bg-white dark:bg-philosopher-charcoal shadow-lg"
@@ -67,10 +70,18 @@ const Hero = () => {
                 <Linkedin className="w-6 h-6 text-philosopher-orange dark:text-neon-orange" />
               </a>
               <a 
-                href="mailto:mustafa@example.com" 
+                href="mailto:mustafa.siddiqiu24@gmail.com" 
                 className="glow-hover p-3 rounded-full bg-white dark:bg-philosopher-charcoal shadow-lg"
               >
                 <Mail className="w-6 h-6 text-philosopher-orange dark:text-neon-orange" />
+              </a>
+              <a 
+                href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4zTDiZigG2LLRQ36TWOsLVfbUTpMdLGYW_ir63fItN2UP-879bk2BpZ167n3wBNculXK860rMJalpaBhw&user=FUKguFgAAAAJ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="glow-hover p-3 rounded-full bg-white dark:bg-philosopher-charcoal shadow-lg"
+              >
+                <GraduationCap className="w-6 h-6 text-philosopher-orange dark:text-neon-orange" />
               </a>
             </motion.div>
           </motion.div>
@@ -89,8 +100,11 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               Hi, I'm{' '}
-              <span className="text-philosopher-orange dark:text-neon-orange font-medium">
-                Mustafa
+              <span className="text-philosopher-orange dark:text-neon-orange font-medium bg-gradient-to-r from-philosopher-orange via-orange-500 to-amber-500 dark:from-neon-orange dark:via-orange-400 dark:to-yellow-400 bg-clip-text text-transparent" style={{
+                textShadow: '0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.05)',
+                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))'
+              }}>
+                Mustafa Siddiqui
               </span>
             </motion.h1>
             

@@ -30,11 +30,15 @@ const WhyAI = () => {
             
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-700 dark:text-philosopher-gray">
-                People often ask how I can spend so much time on research. But when something feels like it's bringing you closer to your ultimate question, time stops feeling like time.
+                In the past few years, I have found philosophy deeply engaging, especially the field of epistemology and the study of decision-making. The ideas of Descartes' rationalism, Hume's empiricism, and Kant's synthesis between them have shaped how I think about knowledge and understanding.
               </p>
               
               <p className="text-lg leading-relaxed text-gray-700 dark:text-philosopher-gray">
-                AI, for me, isn't just technology. It's a mirror — a way to study how learning and understanding actually happen.
+                Yet, I believe that with the rise of AI, we now have a chance to move beyond these classical debates. For the first time, we can begin to mathematically explore what intelligence, knowledge, and understanding truly are.
+              </p>
+              
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-philosopher-gray">
+                This pursuit is what drives me. It is the reason I find so much joy in research, the feeling that each new experiment, no matter how small, might bring us a little closer to understanding the nature of thought itself.
               </p>
             </div>
           </motion.div>

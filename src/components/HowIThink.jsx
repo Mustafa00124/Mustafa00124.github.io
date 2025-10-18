@@ -24,50 +24,100 @@ const HowIThink = () => {
             transition: 'opacity 0.8s ease-in-out'
           }}
         >
-          <h2 className="text-3xl md:text-4xl font-light mb-12 text-center text-gray-800 dark:text-philosopher-gray">
-            How I Think
-          </h2>
-          
-          <div className="space-y-8">
-            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
-              The other thing that has shaped my mind is tennis.
-            </p>
-            
-            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
-              I love the{' '}
-              <motion.span 
-                className="text-philosopher-orange dark:text-neon-orange font-medium cursor-pointer"
-                whileHover={{ 
-                  color: '#FF6B35',
-                  textShadow: '0 0 8px rgba(248, 184, 78, 0.5)',
-                  scale: 1.05
-                }}
-                transition={{ duration: 0.3 }}
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Tennis images on the left */}
+            <div className="flex flex-col items-center lg:items-start gap-7 order-2 lg:order-1">
+              <motion.div
+                className="flex justify-center lg:justify-start"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
               >
-                strategy
-              </motion.span>
-              {' '}— how every point is a problem, every rally a conversation of adjustments.
-            </p>
-            
-            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
-              It taught me that{' '}
-              <motion.span 
-                className="text-philosopher-orange dark:text-neon-orange font-medium cursor-pointer"
-                whileHover={{ 
-                  color: '#FF6B35',
-                  textShadow: '0 0 8px rgba(248, 184, 78, 0.5)',
-                  scale: 1.05
-                }}
-                transition={{ duration: 0.3 }}
+                <motion.img
+                  src="/tennis.jpg"
+                  alt="Tennis"
+                  className="w-32 h-32 object-cover rounded-lg filter drop-shadow-lg"
+                  style={{ 
+                    objectPosition: 'left center' // Show left side of image
+                  }}
+                  initial={{ rotate: -15, scale: 1 }}
+                  animate={{ rotate: -15, scale: 1 }}
+                  whileHover={{ 
+                    scale: 1.1,
+                    transition: { duration: 0.3 }
+                  }}
+                />
+              </motion.div>
+              
+              <motion.div
+                className="flex justify-center lg:justify-start"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
               >
-                learning
-              </motion.span>
-              {' '}isn't about knowing the answer, but about adapting with awareness.
+                <motion.img
+                  src="/tennis2.jpg"
+                  alt="Tennis 2"
+                  className="w-32 h-32 object-cover rounded-lg filter drop-shadow-lg"
+                  style={{ 
+                    objectPosition: 'left center' // Show left side of image
+                  }}
+                  initial={{ rotate: 15, scale: 1 }}
+                  animate={{ rotate: 15, scale: 1 }}
+                  whileHover={{ 
+                    scale: 1.1,
+                    transition: { duration: 0.3 }
+                  }}
+                />
+              </motion.div>
+              
+              <motion.div
+                className="flex justify-center lg:justify-start"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+              >
+                <motion.img
+                  src="/tennis3.png"
+                  alt="Tennis 3"
+                  className="w-32 h-32 object-cover rounded-lg filter drop-shadow-lg"
+                  style={{ 
+                    objectPosition: 'center center' // Show center of image
+                  }}
+                  initial={{ rotate: -10, scale: 1 }}
+                  animate={{ rotate: -10, scale: 1 }}
+                  whileHover={{ 
+                    scale: 1.1,
+                    transition: { duration: 0.3 }
+                  }}
+                />
+              </motion.div>
+            </div>
+            
+            {/* Text content on the right */}
+            <div className="space-y-8 order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-light mb-8 text-right text-gray-800 dark:text-philosopher-gray">
+                Personal Interests
+              </h2>
+            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
+              Tennis has become one of the most meaningful parts of my life. I started learning the sport relatively late, after I had already begun working in AI, and somehow the two have always felt connected.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
-              Chess, riddles, and collecting Rubik's cubes give me the same feeling — the quiet joy of finding structure in complexity.
+              As I practiced different techniques and tried to improve, I couldn't help but draw parallels with deep learning and reinforcement learning. Ideas like generalization, overfitting, and non-convexity often came to mind. Every match and practice session felt like a living metaphor for learning itself, adapting, failing, adjusting, and finding better solutions through experience.
             </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
+              My passion for the game runs deep. I have always admired Novak Djokovic for his mental strength and discipline, qualities that mirror the patience and persistence I value in research. In today's new era of tennis, I find myself rooting for Jannik Sinner, whose calm precision and consistency on court truly inspire me. I love watching tennis as much as I love playing it, and it continues to teach me about focus, resilience, and the quiet art of getting better.
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray">
+              I also enjoy playing chess, solving Rubik's cubes and riddles as well.
+            </p>
+            </div>
           </div>
           
           {/* Decorative icons */}

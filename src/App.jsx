@@ -3,8 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Hero from './components/Hero'
 import WhoIAm from './components/WhoIAm'
 import WhyAI from './components/WhyAI'
-import MyKindOfPeople from './components/MyKindOfPeople'
-import HowIThink from './components/HowIThink'
+import PersonalInterests from './components/PersonalInterests'
 import Connect from './components/Connect'
 import DarkModeToggle from './components/DarkModeToggle'
 import ScrollToTop from './components/ScrollToTop'
@@ -16,9 +15,8 @@ function App() {
   useEffect(() => {
     // Check for saved theme preference or default to light mode
     const savedTheme = localStorage.getItem('theme')
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    if (savedTheme === 'dark') {
       setDarkMode(true)
       document.documentElement.classList.add('dark')
     } else {
@@ -52,8 +50,7 @@ function App() {
         <Hero />
         <WhoIAm />
         <WhyAI />
-        <MyKindOfPeople />
-        <HowIThink />
+        <PersonalInterests />
         <Connect />
       </main>
       

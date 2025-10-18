@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail, GraduationCap } from 'lucide-react'
 import useScrollFade from '../hooks/useScrollFade'
 import SectionParticles from './SectionParticles'
 
@@ -29,30 +29,42 @@ const Connect = () => {
           </h2>
           
           <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray mb-12 max-w-2xl mx-auto">
-            If you think about intelligence, learning, or meaning the way I do, I'd love to talk.
+            If you share similar interests or are interested in working with me, let's connect.
           </p>
           
-          <div className="flex justify-center gap-8">
+          <div className="flex justify-center gap-6 flex-wrap">
             <motion.a 
-              href="https://linkedin.com/in/mustafa-siddiqui" 
+              href="https://www.linkedin.com/in/mustafasid/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 px-8 py-4 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group flex items-center gap-3 px-6 py-3 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Linkedin className="w-6 h-6 text-philosopher-orange dark:text-neon-orange group-hover:scale-110 transition-transform duration-300" />
+              <Linkedin className="w-5 h-5 text-philosopher-orange dark:text-neon-orange group-hover:scale-110 transition-transform duration-300" />
               <span className="text-gray-700 dark:text-philosopher-gray font-medium">LinkedIn</span>
             </motion.a>
             
             <motion.a 
-              href="mailto:mustafa@example.com" 
-              className="group flex items-center gap-3 px-8 py-4 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              href="mailto:mustafa.siddiqiu24@gmail.com" 
+              className="group flex items-center gap-3 px-6 py-3 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Mail className="w-6 h-6 text-philosopher-orange dark:text-neon-orange group-hover:scale-110 transition-transform duration-300" />
+              <Mail className="w-5 h-5 text-philosopher-orange dark:text-neon-orange group-hover:scale-110 transition-transform duration-300" />
               <span className="text-gray-700 dark:text-philosopher-gray font-medium">Email</span>
+            </motion.a>
+            
+            <motion.a 
+              href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4zTDiZigG2LLRQ36TWOsLVfbUTpMdLGYW_ir63fItN2UP-879bk2BpZ167n3wBNculXK860rMJalpaBhw&user=FUKguFgAAAAJ" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 px-6 py-3 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <GraduationCap className="w-5 h-5 text-philosopher-orange dark:text-neon-orange group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-gray-700 dark:text-philosopher-gray font-medium">Google Scholar</span>
             </motion.a>
           </div>
         </motion.div>
