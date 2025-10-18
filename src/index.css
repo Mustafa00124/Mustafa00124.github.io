@@ -11,19 +11,21 @@
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
     color: #0B0C10;
-    background-color: #FFFDF8;
-    transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+    background: linear-gradient(135deg, #FFFDF8 0%, #FFF8E1 50%, #FFFDF8 100%);
+    background-attachment: fixed;
+    transition: background 0.7s ease-in-out, color 0.7s ease-in-out;
   }
   
   .dark body {
     color: #EAEAEA;
-    background-color: #0B0C10;
+    background: linear-gradient(135deg, #0B0C10 0%, #1a1a2e 50%, #0B0C10 100%);
+    background-attachment: fixed;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-6 py-16 md:px-12 lg:px-24;
+    @apply px-6 py-8 md:px-12 lg:px-24;
   }
   
   .container-max {
@@ -42,6 +44,26 @@
   
   .dark .philosopher-gradient {
     background: linear-gradient(135deg, #0B0C10 0%, #1a1a2e 50%, #16213e 100%);
+  }
+  
+  .warm-section-bg {
+    background: linear-gradient(135deg, #FFFDF8 0%, #FFF8E1 30%, #FFFDF8 100%);
+    background-attachment: fixed;
+  }
+  
+  .dark .warm-section-bg {
+    background: linear-gradient(135deg, #0B0C10 0%, #1a1a2e 30%, #0B0C10 100%);
+    background-attachment: fixed;
+  }
+  
+  .warm-section-bg-alt {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFFDF8 30%, #FFF8E1 100%);
+    background-attachment: fixed;
+  }
+  
+  .dark .warm-section-bg-alt {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0B0C10 30%, #1a1a2e 100%);
+    background-attachment: fixed;
   }
   
   .image-tilt {
@@ -131,6 +153,23 @@
         50% {
           opacity: 0.1;
           transform: scale(1.1);
+        }
+      }
+      
+      @keyframes floatUp {
+        0% {
+          transform: translateY(100vh) translateX(0px);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        90% {
+          opacity: 0.3;
+        }
+        100% {
+          transform: translateY(-100px) translateX(10px);
+          opacity: 0;
         }
       }
 }

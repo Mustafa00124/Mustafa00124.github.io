@@ -1,15 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import useScrollFade from '../hooks/useScrollFade'
+import SectionParticles from './SectionParticles'
 
 const MyKindOfPeople = () => {
   const { elementRef, opacity } = useScrollFade(0.3)
 
   return (
     <section className="section-padding relative overflow-hidden">
-      {/* Orange gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-philosopher-orange/10 via-philosopher-orange/5 to-transparent"></div>
-      <div className="dark:absolute dark:inset-0 dark:bg-gradient-to-br dark:from-neon-orange/10 dark:via-neon-orange/5 dark:to-transparent"></div>
+      {/* Same gradient as hero */}
+      <div className="absolute inset-0 philosopher-gradient parallax-bg opacity-40"></div>
+      
+      {/* Section-specific sun particles */}
+      <SectionParticles count={7} size="small" />
       
       <div className="container-max relative z-10">
         <motion.div 

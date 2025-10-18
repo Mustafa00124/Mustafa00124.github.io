@@ -2,16 +2,18 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Circle, Crown, Box } from 'lucide-react'
 import useScrollFade from '../hooks/useScrollFade'
+import SectionParticles from './SectionParticles'
 
 const HowIThink = () => {
   const { elementRef, opacity } = useScrollFade(0.3)
 
   return (
-    <section className="section-padding bg-white dark:bg-philosopher-charcoal relative overflow-hidden">
-      {/* Background texture */}
-      <div className="absolute inset-0 opacity-5 dark:opacity-10">
-        <div className="w-full h-full bg-gradient-to-br from-philosopher-orange/20 to-transparent"></div>
-      </div>
+    <section className="section-padding relative overflow-hidden">
+      {/* Same gradient as hero */}
+      <div className="absolute inset-0 philosopher-gradient parallax-bg opacity-40"></div>
+      
+      {/* Section-specific sun particles */}
+      <SectionParticles count={9} size="small" />
       
       <div className="container-max relative z-10">
         <motion.div 

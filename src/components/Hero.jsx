@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
 import { Linkedin, Mail } from 'lucide-react'
+import SectionParticles from './SectionParticles'
 
 const Hero = () => {
   const typedRef = useRef(null)
@@ -25,7 +26,10 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Parallax Background */}
-      <div className="absolute inset-0 philosopher-gradient parallax-bg opacity-30"></div>
+      <div className="absolute inset-0 philosopher-gradient parallax-bg opacity-40"></div>
+      
+      {/* Section-specific sun particles */}
+      <SectionParticles count={12} size="large" />
       
       <div className="container-max section-padding relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -41,7 +45,7 @@ const Hero = () => {
                 src="/WebPic.jpeg"
                 alt="Mustafa Siddiqui"
                 className="w-80 h-auto object-contain rounded-2xl image-tilt filter drop-shadow-2xl"
-                whileHover={{ scale: 1.05, rotate: 0 }}
+                whileHover={{ scale: 1.05, rotate: 90 }}
                 transition={{ duration: 0.4 }}
               />
               <div className="absolute -inset-4 bg-gradient-to-r from-philosopher-orange to-transparent rounded-2xl opacity-20 blur-xl"></div>

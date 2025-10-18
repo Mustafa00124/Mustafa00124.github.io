@@ -2,13 +2,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Linkedin, Mail } from 'lucide-react'
 import useScrollFade from '../hooks/useScrollFade'
+import SectionParticles from './SectionParticles'
 
 const Connect = () => {
   const { elementRef, opacity } = useScrollFade(0.3)
 
   return (
-    <section className="section-padding bg-philosopher-cream dark:bg-gray-900">
-      <div className="container-max">
+    <section className="section-padding relative overflow-hidden">
+      {/* Same gradient as hero */}
+      <div className="absolute inset-0 philosopher-gradient parallax-bg opacity-40"></div>
+      
+      {/* Section-specific sun particles */}
+      <SectionParticles count={8} size="small" />
+      
+      <div className="container-max relative z-10">
         <motion.div 
           ref={elementRef}
           className="text-center"
