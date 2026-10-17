@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
-import { Linkedin, Mail, GraduationCap } from 'lucide-react'
+import { Linkedin, Mail, GraduationCap, FileText } from 'lucide-react'
 import SectionParticles from './SectionParticles'
 
 const Hero = () => {
@@ -116,6 +116,20 @@ const Hero = () => {
             >
               <span ref={typedRef} className="min-h-[2.5rem] block"></span>
             </motion.div>
+
+            <motion.a
+              href="/MustafaSiddiqui_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-philosopher-orange px-5 py-3 font-medium text-white shadow-lg transition-shadow hover:shadow-xl dark:bg-neon-orange"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <FileText className="h-5 w-5" /> View résumé PDF
+            </motion.a>
           </motion.div>
         </div>
       </div>
