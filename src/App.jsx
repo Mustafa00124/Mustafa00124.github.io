@@ -5,7 +5,6 @@ import WhoIAm from './components/WhoIAm'
 import WhyAI from './components/WhyAI'
 import PersonalInterests from './components/PersonalInterests'
 import Connect from './components/Connect'
-import Publications from './components/Publications'
 import DarkModeToggle from './components/DarkModeToggle'
 import ScrollToTop from './components/ScrollToTop'
 import ParticleBackground from './components/ParticleBackground'
@@ -50,7 +49,6 @@ function App() {
       <main>
         <Hero />
         <WhoIAm />
-        <Publications />
         <WhyAI />
         <PersonalInterests />
         <Connect />
