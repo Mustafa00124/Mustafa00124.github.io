@@ -46,7 +46,7 @@ const Connect = () => {
             </motion.a>
             
             <motion.a 
-              href="mailto:mustafa.siddiqiu24@gmail.com" 
+              href="mailto:msiddiqui146@usf.edu"
               className="group flex items-center gap-3 px-6 py-3 bg-white dark:bg-philosopher-charcoal rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

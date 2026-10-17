@@ -25,7 +25,7 @@ const WhoIAm = () => {
         >
           <div className="accent-line">
             <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray mb-6">
-              I'm an AI researcher and engineer by profession, currently working part-time at LUMS on foundational deep learning problems and part-time developing agentic AI systems for clients and my own ventures.
+              I'm a Ph.D. student in Computer Science at the University of South Florida, studying how large language models represent, retrieve, and modify knowledge. Previously, I worked as a research assistant at LUMS on open-set recognition, federated learning, domain generalization, and deep unfolding.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-philosopher-gray mb-6">

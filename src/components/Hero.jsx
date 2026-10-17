@@ -70,7 +70,7 @@ const Hero = () => {
                 <Linkedin className="w-6 h-6 text-philosopher-orange dark:text-neon-orange" />
               </a>
               <a 
-                href="mailto:mustafa.siddiqiu24@gmail.com" 
+                href="mailto:msiddiqui146@usf.edu"
                 className="glow-hover p-3 rounded-full bg-white dark:bg-philosopher-charcoal shadow-lg"
               >
                 <Mail className="w-6 h-6 text-philosopher-orange dark:text-neon-orange" />
@@ -108,6 +108,13 @@ const Hero = () => {
               </span>
             </motion.h1>
             
+            <p className="mb-4 text-base font-medium text-gray-700 dark:text-philosopher-gray">
+              Ph.D. Student · AI Researcher · University of South Florida
+            </p>
+            <p className="mb-6 text-lg leading-relaxed text-gray-700 dark:text-philosopher-gray">
+              I study knowledge editing and mechanistic interpretability to understand how large language models store and update knowledge.
+            </p>
+
             <motion.div 
               className="text-xl md:text-2xl text-gray-600 dark:text-philosopher-gray font-light leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
